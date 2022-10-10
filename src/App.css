@@ -1,0 +1,43 @@
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.light{
+   color: black;
+   height: 100vh;
+   background-color: rgb(217, 220, 247);
+   transition :0.3s ease-in-out
+}
+
+.dark{
+    color: aliceblue;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.897);
+    transition :0.2s ease-in-out
+}
+
+span{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+  
+           
+     
+
+ 
+
+
+
+
+  
+
+
+
+
