@@ -13,7 +13,6 @@ import { AnimatePresence } from "framer-motion/dist/framer-motion";
 import { Theme } from "./components/Context";
 import { useRef } from "react";
 
-
 function App() {
   const App = useRef(null);
   const [disable, setDisable] = useState(true);
@@ -76,7 +75,7 @@ function App() {
     },
   ]);
   const [searched, setSearched] = useState({});
-  const [mode, setMode] = useState(false);
+  const [mode, setMode] = useState(true);
   const location = useLocation();
   const Btn = () => {
     if (mode === true) {
@@ -86,7 +85,6 @@ function App() {
     }
   };
 
- 
   return (
     <Theme.Provider value={mode}>
       <div className={mode ? "dark" : "light"} ref={App}>
@@ -94,7 +92,7 @@ function App() {
           {mode ? <FiSun></FiSun> : <MdDarkMode></MdDarkMode>}
         </span>
         <Nav disable={disable} style={mode ? HeaderDark : HeaderLight}></Nav>
-        <AnimatePresence mode='wait' >
+        <AnimatePresence mode="wait">
           <Routes key={location.pathname} location={location}>
             <Route
               path="/"
@@ -140,8 +138,6 @@ const HeaderLight = {
   borderBottom: "2px solid black",
   display: "flex",
   transition: "0.3s ease-in-out",
-
-  
 };
 
 const HeaderDark = {
@@ -154,6 +150,3 @@ const HeaderDark = {
   borderBottom: "2px solid white",
   transition: "0.3s ease-in-out",
 };
-
-
-
