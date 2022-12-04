@@ -49,7 +49,7 @@ function Update({ setStudent, student, searched,setDisable }) {
     
   };
 
-  console.log(searched.id)
+
 
   const UpdateHandler = () => {
     setClick(true);
@@ -164,6 +164,7 @@ function Update({ setStudent, student, searched,setDisable }) {
        <Link to="/list" > <motion.input
           whileHover={{scale:[1,1.1,1,1.1,1]}}
           className={style.Delete}
+          style={{  backgroundColor: 'red'}}
           type="button"
           onClick={DeleteHandler}
           value="Delete"
@@ -172,6 +173,7 @@ function Update({ setStudent, student, searched,setDisable }) {
        <motion.input
          whileHover={{scale:[1,1.1,1,1.1,1]}}
           className={style.Update}
+          style={{  backgroundColor: 'green'}}
           type="button"
           onClick={UpdateHandler}
           value="Update"

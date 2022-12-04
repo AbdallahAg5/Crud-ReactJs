@@ -85,8 +85,8 @@ function App() {
       setMode(true);
     }
   };
-  console.log(student);
 
+ 
   return (
     <Theme.Provider value={mode}>
       <div className={mode ? "dark" : "light"} ref={App}>
@@ -94,7 +94,7 @@ function App() {
           {mode ? <FiSun></FiSun> : <MdDarkMode></MdDarkMode>}
         </span>
         <Nav disable={disable} style={mode ? HeaderDark : HeaderLight}></Nav>
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence mode='wait' >
           <Routes key={location.pathname} location={location}>
             <Route
               path="/"
@@ -154,3 +154,6 @@ const HeaderDark = {
   borderBottom: "2px solid white",
   transition: "0.3s ease-in-out",
 };
+
+
+

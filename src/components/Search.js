@@ -12,7 +12,6 @@ function Blog({ student, setSearched,setDisable }) {
   const [val, setVal] = useState("");
   const InputHandler = (e) => {
     setVal(e.target.value);
-    console.log(student);
     if (clicked == true) {
       setClicked(false);
     }
@@ -61,10 +60,9 @@ function Blog({ student, setSearched,setDisable }) {
         />
          <Link to={'/update'} >
        <input
-       
-          className={style.Update}
+         className={style.Update}
           type="button"
-          
+          style={{  backgroundColor: 'green'}}
           value="Update"
         />
         </Link>

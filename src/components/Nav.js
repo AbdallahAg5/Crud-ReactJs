@@ -10,7 +10,7 @@ function Nav(props) {
     setToggle(!toggle);
   };
 
-  toggle==false ?  document.body.style.overflow='hidden' :  document.body.style.overflow='auto'
+  toggle===false ?  document.body.style.overflow='hidden' :  document.body.style.overflow='auto'
 
   useEffect(() => {
     window.addEventListener("resize", () => {

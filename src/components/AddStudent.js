@@ -93,7 +93,7 @@ function AddStudent({ setStudent, student }) {
     }
   };
 
-  console.log(values);
+  
   return (
        <Animation>
             <div className={style.ajoutContainer}>
@@ -174,6 +174,7 @@ function AddStudent({ setStudent, student }) {
           whileHover='hover'
           whileTap={{ scale: 0.9 }}
           className={style.btn}
+          style={{backgroundColor:'#DCD7C9'}}
           type="button"
           onClick={FormHandler}
           value="Add Student"
