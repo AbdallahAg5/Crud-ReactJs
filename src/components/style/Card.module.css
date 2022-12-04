@@ -1,0 +1,59 @@
+.card{
+     width: 100%;
+     justify-self: center;
+     margin: auto;
+     padding: 10px;
+     height: auto;
+     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.664), -3px -3px 10px rgba(0, 0, 0,0.664);
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin-bottom: 20px;
+     position: relative;
+     
+}
+
+.ImgContainer{
+     height: 170px;
+     width: 170px;
+     justify-self: center;
+   
+}
+
+.img{
+     border-radius: 10px;
+     height: auto;
+     width: 100%;
+     justify-self: center;
+}
+
+.InfoContainer{
+     margin-top: 10px;
+     display: block;
+     width: 100%;
+}
+
+p{
+     font-weight: bold;  
+}
+
+s{
+   text-decoration: none;
+   font-weight: 500;
+   margin-left: 5px;
+
+}
+
+.id{
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     background-color: aliceblue;
+     color: black;
+     padding: 3px;
+     border-radius: 10px 0px 10px 0px;
+}
+
+
