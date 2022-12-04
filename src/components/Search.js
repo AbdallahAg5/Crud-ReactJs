@@ -59,7 +59,8 @@ function Blog({ student, setSearched,setDisable }) {
           id={student.id}
         />
          <Link to={'/update'} >
-       <input
+       <motion.input
+         whileHover={{scale:[1,1.1,1,1.1,1]}}
          className={style.Update}
           type="button"
           style={{  backgroundColor: 'green'}}
